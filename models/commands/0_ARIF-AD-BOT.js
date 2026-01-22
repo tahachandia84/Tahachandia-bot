@@ -2,7 +2,7 @@ module.exports.config = {
   name: "adbot",
   version: "2.0.0",
   hasPermssion: 0,
-  credits: "ARIF BABU",
+  credits: "TAHA BABU",
   description: "User, Group & Admin Information",
   commandCategory: "Media",
   usages: "adbot user | adbot box | adbot admin",
@@ -102,7 +102,7 @@ module.exports.run = async ({ api, event, args }) => {
         api.sendMessage(
           {
             body: ADMIN_BOX(
-              "👤 Name: ARIF BABU 😉\n" +
+              "👤 Name:TAHA BABU 😉\n" +
               "🌐 Facebook:\n" +
               "https://www.facebook.com/share/1H2Vez2frr/\n\n" +
               `🙏 Thanks for using ${global.config.BOTNAME}`
