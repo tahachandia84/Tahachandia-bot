@@ -64,7 +64,7 @@ async function sendUptime(api, event) {
 │ ⚡ Status  : Running Smoothly
 ╰─────────────────╯
 
-✅ Powered By ARIF BABU`;
+✅ Powered By 𝐓𝐀𝐇𝐀 𝐁𝐀𝐁𝐔`;
 
   return api.sendMessage(msg, threadID, messageID);
 }
