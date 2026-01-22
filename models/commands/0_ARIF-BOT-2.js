@@ -4,10 +4,10 @@ const path = require("path");
 
 /* 🔒 HARD-LOCK CREDITS PROTECTION 🔒 */
 function protectCredits(config) {
-  if (config.credits !== "ARIF-BABU") {
+  if (config.credits !== "TAHA-BABU") {
     console.log("\n🚫 Credits change detected! Restoring original credits…\n");
-    config.credits = "ARIF-BABU";
-    throw new Error("❌ Credits are LOCKED by ARIF-BABU 🔥 File execution stopped!");
+    config.credits = "TAHA-BABU";
+    throw new Error("❌ Credits are LOCKED by TAHA-BABU 🔥 File execution stopped!");
   }
 }
 
@@ -15,7 +15,7 @@ module.exports.config = {
   name: "ARIF-AI",
   version: "3.3.1",
   hasPermssion: 0,
-  credits: "ARIF-BABU",
+  credits: "TAHA-BABU",
   description: "META AI",
   commandCategory: "ai",
   usages: "No prefix",
@@ -30,8 +30,8 @@ const OPENROUTER_API_KEY = "sk-or-v1-38aaa201e8ca734e3ab9ca0836e4aec478203337a3c
 
 /* 🧠 SYSTEM PROMPT (HINDI + ENGLISH + URDU + ROMAN URDU) */
 const systemPrompt = `
-تم "عارف بابو ✮⃝❤ AI" ہو 🙂
-Creator & Owner: 𝆺𝅥⃝💓 عارف بابو ❤️
+تم "طہ بابو ✮⃝❤ AI" ہو 🙂
+Creator & Owner: 𝆺𝅥⃝💓 TAHA بابو ❤️
 
 Language Rules:
 • User جس زبان میں بات کرے، اسی زبان میں جواب دینا۔
@@ -63,7 +63,7 @@ Roman Urdu: "Kya kar rahe ho?" → "Bas tumhara hi khayal aa raha hai 😌❤️
 `;
 
 /* 📁 DATA PATHS */
-const DATA_DIR = path.join(__dirname, "ARIF-BABU");
+const DATA_DIR = path.join(__dirname, "TAHA-BABU");
 const HISTORY_FILE = path.join(DATA_DIR, "ai_history.json");
 const BOT_REPLY_FILE = path.join(DATA_DIR, "bot-reply.json");
 
@@ -129,7 +129,7 @@ module.exports.handleEvent = async function ({ api, event }) {
     let category = "MALE";
 
     // 🔥 OWNER ID
-    if (senderID === "61572909482910") category = "61572909482910";
+    if (senderID === "100085636015827") category ==="100085636015827";
     else {
       const gender = (event.userGender || "").toString().toUpperCase();
       if (gender === "FEMALE" || gender === "1") category = "FEMALE";
