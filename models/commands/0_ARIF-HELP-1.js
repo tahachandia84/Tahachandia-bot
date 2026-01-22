@@ -96,7 +96,7 @@ module.exports.run = async function ({ api, event, args, getText }) {
 PAGE [${page}/${Math.ceil(arrayInfo.length / numberOfOnePage)}]
 COMMAND DETAIL: ${prefix}help <command>
 
-🤖 THIS BOT IS MADE BY MR ARIF BABU 🙂
+🤖 THIS BOT IS MADE BY 𝐌𝐑 𝐓𝐀𝐇𝐀 𝐁𝐀𝐁𝐔 🙂
 `;
 
   return api.sendMessage(msg, threadID, messageID);
