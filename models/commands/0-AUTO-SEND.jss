@@ -1,6 +1,6 @@
 module.exports.config = {
 name: 'autosent',
-version: '10.02',
+version: '1.0.0',
 hasPermssion: 0,
 credits: 'NAWAZ AHMAD',
 description: 'Set Karne Ke Bad Automatically Msg Send Karega',
