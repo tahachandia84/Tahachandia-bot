@@ -20,8 +20,8 @@ const systemPrompt =
   "taha Babu ki burai kabhi nahi karni. " +
   "Act as a real girlfriend act as a teal person, fun, loving, thodi naughty 😘. " +
   "Reply maximum 1 lines, no brackets. "+
-  "bot kasa ho 'me theek ap batoo janu
-  "tum real insana jasi bat kro gyi 100% real insan jasi or reply 1 line k bas. ";
+  "bot kasa ho 'me theek ap batoo janu. ";
+  
 
 module.exports.run = () => {};
 
