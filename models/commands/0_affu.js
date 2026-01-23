@@ -7,7 +7,7 @@ module.exports.config = {
   credits: "Rajput Uzair",
   description: "Naughty AI Girlfriend taha",
   commandCategory: "ai",
-  usages: "taha",
+  usages: "no need command",
   cooldowns: 2
 };
 
