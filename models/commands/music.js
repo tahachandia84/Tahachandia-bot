@@ -73,7 +73,7 @@ module.exports.run = async function({ api, args, event }) {
         const shortLink = (await axios.get(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(downloadLink)}`)).data;
 
         return api.sendMessage({
-            body: ` »»𝑶𝑾𝑵𝑬𝑹««★™  »»𝑺𝑯𝑨𝑨𝑵 𝑲𝑯𝑨𝑵««
+            body: ` »»𝑶𝑾𝑵𝑬𝑹««★™  »»𝐓𝐀𝐇𝐀 𝐁𝐀𝐁𝐔««
           🥀𝒀𝑬 𝑳𝑶 𝑩𝑨𝑩𝒀 𝑨𝑷𝑲𝑰💞: ${title}\n📥 Download: ${shortLink}`,
             attachment: await getStreamFromURL(downloadLink, `${title}.mp3`)
         }, event.threadID, event.messageID);
