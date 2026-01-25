@@ -1,23 +1,23 @@
 const axios = require("axios");
 const yts = require("yt-search");
 
-/* ðŸ” Credits Lock */
+/* 🔐 Credits Lock */
 function checkCredits() {
   if (module.exports.config.credits !== "ARIF-BABU") {
-    throw new Error("âŒ Credits Locked By ARIF-BABU");
+    throw new Error("❌ Credits Locked By ARIF-BABU");
   }
 }
 
-/* ðŸŽž Loading Frames */
+/* 🎞 Loading Frames */
 const frames = [
-  "ðŸŽµ â–°â–±â–±â–±â–±â–±â–±â–±â–±â–± 10%",
-  "ðŸŽ¶ â–°â–°â–±â–±â–±â–±â–±â–±â–±â–± 20%",
-  "ðŸŽ§ â–°â–°â–°â–°â–±â–±â–±â–±â–±â–± 40%",
-  "ðŸ’¿ â–°â–°â–°â–°â–°â–°â–±â–±â–±â–± 60%",
-  "â¤ï¸ â–°â–°â–°â–°â–°â–°â–°â–°â–°â–° 100%"
+  "🎵 ▰▱▱▱▱▱▱▱▱▱ 10%",
+  "🎶 ▰▰▱▱▱▱▱▱▱▱ 20%",
+  "🎧 ▰▰▰▰▱▱▱▱▱▱ 40%",
+  "💿 ▰▰▰▰▰▰▱▱▱▱ 60%",
+  "❤️ ▰▰▰▰▰▰▰▰▰▰ 100%"
 ];
 
-/* ðŸŒ API */
+/* 🌐 API */
 const baseApiUrl = async () => {
   const res = await axios.get(
     "https://raw.githubusercontent.com/Mostakim0978/D1PT0/refs/heads/main/baseApiUrl.json"
@@ -42,7 +42,7 @@ function getVideoID(url) {
   return m ? m[1] : null;
 }
 
-/* âš™ CONFIG */
+/* ⚙ CONFIG */
 module.exports.config = {
   name: "song",
   version: "1.3.5",
@@ -61,7 +61,7 @@ module.exports.run = async function ({ api, args, event }) {
 
     if (!args[0]) {
       return api.sendMessage(
-        "âŒ Song ka naam ya YouTube link do",
+        "❌ Song ka naam ya YouTube link do",
         event.threadID,
         event.messageID
       );
@@ -70,7 +70,7 @@ module.exports.run = async function ({ api, args, event }) {
     const input = args.join(" ");
 
     const loading = await api.sendMessage(
-      "ðŸ” Processing...",
+      "🔍 Processing...",
       event.threadID
     );
 
@@ -106,7 +106,7 @@ module.exports.run = async function ({ api, args, event }) {
 
     return api.sendMessage(
       {
-        body: `ðŸŽµ ${data.title}\nðŸ”— ${short}`,
+        body: `🎵 ${data.title}\n🔗 ${short}`,
         attachment: await getStreamFromURL(
           data.downloadLink,
           `${data.title}.mp3`
@@ -119,9 +119,10 @@ module.exports.run = async function ({ api, args, event }) {
   } catch (err) {
     console.error(err);
     return api.sendMessage(
-      "âš ï¸ Server busy ya API down ðŸ˜¢",
+      "⚠️ Server busy ya API down 😢",
       event.threadID,
       event.messageID
     );
   }
 };
+      
